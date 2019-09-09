@@ -1,4 +1,5 @@
 class Question < ApplicationRecord
+    belongs_to :user
     has_many :answers, dependent: :destroy
     # This is the Question model. We generated this file
     # with the command:

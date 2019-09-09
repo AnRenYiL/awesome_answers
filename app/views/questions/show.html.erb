@@ -49,6 +49,10 @@
         <small>
           Answered <%= time_ago_in_words(answer.created_at) %> ago
         </small>
+        |
+        <small>
+          userID: <%= answer.user_id %>
+        </small>
       </p>
     </li>
   <% end %>
